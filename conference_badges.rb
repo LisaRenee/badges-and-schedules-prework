@@ -10,6 +10,7 @@ def batch_badge_creator(names)
   end
 return badges
 end
+
 def assign_rooms(names)
   assignments = []
   room = 1
@@ -24,8 +25,13 @@ end
 def printer(attendees)
   puts attendees
   attendees.each do |name|
-    puts badge_maker(name) + assign_rooms(name)
+    puts badge_maker(name) 
+  
+#     assign_rooms(name)
 
+  end
+  attendees.each do |name|
+    puts assign_rooms(name)
   end
 
 end
